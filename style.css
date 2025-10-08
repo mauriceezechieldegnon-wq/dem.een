@@ -1,0 +1,22 @@
+
+
+body {  font-family: Arial, sans-serif;  margin: 0;  padding: 0;  background: #f4f4f4;  color: #333;}
+header {  background: #002b5b;  color: white;  padding: 20px;  text-align: center;}
+.logo {  width: 80px;  height: auto;  margin-bottom: 10px;}
+nav {  margin-top: 10px;}
+nav a {  color: white;  text-decoration: underline;  margin: 0 10px;  font-weight: bold;}
+.intro, .form-section {  padding: 20px;  max-width: 800px;  margin: auto;  background: white;  margin-top: 20px;  border-radius: 8px;  box-shadow: 0 0 10px #ccc;}
+h2 {  color: #002b5b;}
+h1 { color: white;}
+form {  display: flex;  flex-direction: column;}
+input, select, textarea {  padding: 10px;  margin: 10px 0;  border: 1px solid #aaa;  border-radius: 4px;}
+button {  background: #007bff;  color: white;  border: none;  padding: 12px;  cursor: pointer;  border-radius: 4px;  transition: background 0.3s ease;}
+button:hover {  background: #0056b3;}
+footer {  text-align: center;  padding: 20px;  background: #002b5b;  color: white;  margin-top: 30px;}
+.system ul {  margin-top: 10px;  margin-bottom: 10px;  padding-left: 20px;}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+      nav ul {    flex-direction: column;  }  
+      nav ul li {    margin: 10px 0;  }  
+      form {    width: 90%;    margin: 20px auto;  }}
