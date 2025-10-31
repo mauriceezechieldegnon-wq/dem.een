@@ -17,6 +17,7 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 if (!emailRegex.test(email)) {  alert("Veuillez entrer une adresse email valide.");        
 return;}    
 const whatsappNumber = "22958660666";    
-const texte = `Bonjour, je m'appelle ${nom}. Je souhaite un devis pour: ${message}.Email: ${email}, WhatsApp: ${tel}`;    
+const texte = `Bonjour DEM EE, je m'appelle ${nom}. Je souhaite un devis pour: ${message}.Email: ${email}, WhatsApp: ${tel}`;    
 const lien = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(texte)}`;    window.open(lien, "_blank");});
+
 
