@@ -6,7 +6,7 @@ const email = document.getElementById("email").value.trim();
 const tel = document.getElementById("tel").value.trim();  
 const message = document.getElementById("message").value.trim();   
 const confimationDiv = document.getElementById("confirmationMessage");
-confimationDiv.textContent= " Vous recevrez votre devis personnalisé par mail ou par whatsapp dans un délai maximal de 72 heures. Merci de nous faire confiance";
+confimationDiv.textContent= " Vous recevrez votre devis personnalisé par mail ou par whatsapp. Merci de nous faire confiance";
 setTimeout(()=>{confimationDiv.textContent = "";
 }, 7000);  
 // Validation des champs    
@@ -17,7 +17,8 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 if (!emailRegex.test(email)) {  alert("Veuillez entrer une adresse email valide.");        
 return;}    
 const whatsappNumber = "22958660666";    
-const texte = `Bonjour DEM EE, je m'appelle ${nom}. Je souhaite un devis pour: ${message}.Email: ${email}, WhatsApp: ${tel}`;    
+const texte = `Bonjour DEM EE. Nom : ${nom}. Description du Service souhaité: ${message}.Email: ${email}, WhatsApp: ${tel}`;    
 const lien = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(texte)}`;    window.open(lien, "_blank");});
+
 
 
